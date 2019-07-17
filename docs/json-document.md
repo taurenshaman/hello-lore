@@ -6,17 +6,27 @@ We have defined several [JSON templates](https://github.com/13f/templates):
 * todo/task
 
 ## Visualization
-1. By default, here is a **JSON code view** with highlight supported.  
+1. By default, there must be a **JSON code view** with highlight supported.  
 ```$("#jsoncode").JSONView(json);```  
 
-2. If the root has a `items` property ~~and the type its value is array~~, there will be a **DataTable view**.  
-```// json to html table
+2. If the root has a `items` property and the type its value is array, and the root has a `template` property, there will be a **Template view**.
+  The templates currently supported: bookmark
+
+3. If the root has a `items` property and the type its value is array, there will be a **DataTable view**.  
+```
+// check
+bool hasItemsAndIsArray = Model != null && Model.Content.Token["items"] != null && Model.Content.Token["items"].Type == Newtonsoft.Json.Linq.JTokenType.Array;
+
+// json to html table
   if (json["items"] != null) {
       var jsonHtmlTable = ConvertJsonToTable(json["items"], 'jsonTable', 'dataTable', 'Link');
       $("#datatable").append(jsonHtmlTable);
       $("#jsonTable").DataTable();
   }
 ```
+
+4. If the root has a `processor` property and its value is `vis/network`, there will be a **Vis/Network view**.
+5. If the root has a `type` property and its value is `AdaptiveCard`, there will be a **Adaptive Card view**.
 
 ## Personal Data
 1. Personanl navigation page: /{username}/[navigation|123]  
