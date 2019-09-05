@@ -1,3 +1,6 @@
+# JSON document
+You can write note in JSON format.
+
 ## Templates
 We have defined several [JSON templates](https://github.com/13f/templates):  
 * Bookmark
