@@ -11,6 +11,7 @@ We have defined several [JSON templates](https://github.com/13f/templates):
 ## Visualization
 1. By default, there must be a **JSON code view** with highlight supported.  
 ```$("#jsoncode").JSONView(json);```  
+1.1 By default, there may be a **[hierarchy view](https://github.com/13f/lore-graph)** for json content, **IF** there is no graph `processor` like `vis/network` or `d3` or `cytoscape`.  
 
 2. If the root has a `items` property and the type its value is array, and the root has a `template` property, there will be a **Template view**.
   The templates currently supported: bookmark
