@@ -2,11 +2,31 @@
 
 There must be one RootNode/MainNode (mainNode: "main") and one ContextNode (contextNode: "context"), and 0 ~ N nodes are normal ones (normalNode: "normal").  
 
+## Context
+There is no context at root, but a context node in nodes:
+```json
+{
+    "group": "nodes",
+    "data": {
+        "id": "",
+        "title": "Graph Context",
+        "titleColor": "#000000",
+        "contextNode": "context",
+        "shapeBackgroundColor": "#cc99cc",
+        "shapeBorderColor": "#cc99cc",
+        "uri": "",
+        "description": "",
+        "descriptionType": "markdown"
+    },
+    //...
+},
+```
+
 ## Style
 If you wanna use a customized style (TODO), please read the [Default style](https://lore.chuci.info/apps/cytoscape/cytoscape-styles-default.js) for reference. And the following is the structure of node/edge.  
 
 ## `data` of element (node/edge)
-```
+```json
 // node
 // There are 3 types of nodes, used for **styles**:
 // 1. mainNode: "main"
