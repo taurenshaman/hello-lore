@@ -1,4 +1,4 @@
-# Section | 摘抄
+# Section | 部件 | 片段
 
 A section is a card with front and back content.
 
