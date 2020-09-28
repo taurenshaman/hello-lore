@@ -28,10 +28,12 @@ Community and Donation Log for http://lore.chuci.info
 
 ### 4. Test | 测试
 1. [Single Choices Set | 单选题集](docs/single-choices-set.md)
+2. Questions Set | 问题集
 
-### Notebook
+~~### Notebook~~
 
 
 ## Welcome!
 * [Feature Request; Bug Report](https://github.com/taurenshaman/hello-lore/issues)
 * [Donate](https://github.com/taurenshaman/hello-lore/wiki/Donate!)
+* [Change Logs](changelog/)
